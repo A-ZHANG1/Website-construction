@@ -1,0 +1,13 @@
+@charset "utf-8";
+/* CSS Document */
+body{font-color:#000066;margin:0;background:#cdcdfe;} 
+table,ul,p {
+  color: green;
+  font-size: 10.5pt;
+  text-align: center;
+  font-family: "楷体","Times New Roman";
+  font-weight: bold;
+  }
+
+
+
