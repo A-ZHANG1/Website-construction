@@ -1,0 +1,34 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script>
+/*var a=12;
+a="123";
+a=true;
+a=function(){}
+alert(a+b)*/
+function add(){
+var a=parseInt(text1.value);
+var b=parseInt(text2.value);
+if(isNaN(b))
+{
+alert("您的第二个输入有误")
+}
+else if(isNaN(a))
+{
+alert("您的第一个输入有误")
+}
+else alert(a+b);
+}
+</script>
+</head>
+
+<body>
+<input type="text" id="text1"/>
+<input type="text" id="text2"/>
+<input type="button" value="=" onclick="add()"/>
+</body>
+</html>

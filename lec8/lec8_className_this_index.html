@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<style>
+#div1 div{ width:250px;height:300px; border:1px solid #999;backgrpound:#ccc;display:none;}
+#div1 .active{background:red;}
+</style>
+
+<script>
+window.onload=function()
+{
+	var aBtn=div1.getElementsByTagName("input");
+	var aDiv=div1.getElementsByTagName("div");
+	for(var i=0;i<aBtn.length;i++)
+	{
+		aBtn[i].index=i;//自定义属性
+		aBtn[i].onclick=function()
+		{
+			for(var i=0;i<aBtn.length;i++)
+			{
+			aBtn[i].className=" ";
+			aDiv[i].style.display="none";
+			
+			}
+			this.className="active";
+			aDiv[this.index].style.display="block";
+		}
+	}
+}
+</script>
+
+</head>
+
+<body>
+<div id="div1">
+<input type="button" value="HTML"/>
+<input type="button" value="CSS"/>
+<input type="button" value="JS"/>
+<input type="button" value="PHP"/>
+
+<div style="display:block;">HTML</div>
+<div>CSS</div>
+<div>JS</div>
+<div>PHP</div>
+</div>
+</body>
+</html>

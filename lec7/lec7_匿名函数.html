@@ -1,0 +1,30 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<!-- saved from url=(0014)about:internet -->
+
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+</head>
+
+<body>
+<input id="btn1" type="button" value="button" onclick='a()'/>
+<script>
+//function a()
+//{
+//alert(btn1.value);
+//btn1.value="确定";
+//btn1.type="radio";
+//btn1.onclick=alert("Hello");
+window.onload=function()//如果script放在btn1前面，存在文档加载不完全的问题
+{
+btn1.onclick=function()//匿名函数
+{
+alert(btn1.value)
+}
+}
+
+</script>
+</body>
+</html>

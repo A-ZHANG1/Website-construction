@@ -1,0 +1,47 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title> <link type="text/css" rel="stylesheet" href="style.css" />
+ <script>
+ window.onload=function()
+ {
+ var aTxt=['数学','计算机','英语','体育','语文','爬山','休息'];
+ var bTxt=['一','二','三','四','五','六','七'];
+  var aLi=div1.getElementsByTagName('li');
+  for(var i=0;i<aLi.length;i++)
+  {
+    aLi[i].index=i;
+  	aLi[i].onmouseover=function()
+	{
+		for(var i=0;i<aLi.length;i++)
+		{
+			aLi[i].className='';
+		}
+		this.className='active';
+		showTxt.innerHTML='<h2>周'+bTxt[this.index]+'</h2><p>'+aTxt[this.index]+'</p>';
+	}
+  }
+ }
+ </script>
+</head>
+
+<body>
+<div id="div1" class="weekday">
+<ul> 	
+    <li><h2>Mon</h2><p>周一</p></li>
+    <li><h2>Tue</h2><p>周二</p></li>
+    <li><h2>Wed</h2><p>周三</p></li>
+	<li><h2>Thu</h2><p>周四</p></li>
+	<li><h2>Fri</h2><p>周五</p></li>
+	<li><h2>Sat</h2><p>周六</p></li>
+	<li><h2>Sun</h2><p>周日</p></li>
+</ul>  
+<div id="showTxt" class="text">
+<h2>一周安排</h2>
+<p>丰富</p>
+</div>
+</div>
+</body>
+</html>

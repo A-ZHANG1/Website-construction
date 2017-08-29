@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script>
+window.onload=function()
+{
+
+submit.onclick=function()
+{
+alert("here");
+
+if(form1.txtUsername.value==' ')
+alert("please input username");
+return false;
+
+}
+}
+</script>
+</head>
+
+<body>
+<form id="form1" name="form1" method="post" action="information.php">
+  <label>用户名
+  <input name="txtUsername" type="text" id="txtUsername" />
+  </label>
+  <p>密码
+    <input name="txtUserPass" type="text" id="txtUserPass" />
+  </p>
+  <label></label>
+  <p>再次输入
+    <label>
+    <input name="txtUserPass1" type="text" id="txtUserPass1" />
+    </label>
+  </p>
+  <p>姓别 
+    <label>
+    <input type="radio" name="radioSex" value="male" />
+    </label>
+    男
+    <label>
+    <input type="radio" name="radioSex" value="female" />
+    </label>
+  女</p>
+  <p>爱好
+    <label>
+    <input type="checkbox" name="C1" id="C1" value="art" />
+    </label>
+    艺术 
+    <label>
+    <input type="checkbox" name="C2" id="C2" value="computer" />
+    </label>
+    电脑
+    <label>
+    <input type="checkbox" name="C3" id="C3" value="painting" />
+    </label>
+  美术</p>
+  <p>城市
+    <label>
+    <select name="city" id="city">
+      <option value="Shanghai">上海</option>
+      <option value="Beijing">北京</option>
+    </select>
+    </label>
+</p>
+  <p>
+    <label>
+    <input type="submit" name="submit" id="submit" value="提交" />
+    </label>
+    <label>
+    <input type="reset" name="Submit2" value="重置" />
+    </label>
+  </p>
+</form>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+
+<style>
+div{width:200px; height:200px; border:solid 1px #000;float:left;margin:20px;}
+</style>
+<script>
+window.onload=function()
+{
+	//div1.style.background="red";
+	var oDiv=document.getElementsByTagName('div');
+	alert (oDiv.length);
+	for(var i=0;i<oDiv.length;i++)
+	{
+	oDiv[i].style.background="red";
+	}
+
+}
+</script>
+</head>
+
+<body>
+<div id="div1">111
+</div>
+<div>222
+</div>
+<div>333
+</div>
+<div>444
+</div>
+</body>
+</html>

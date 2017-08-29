@@ -1,0 +1,14 @@
+/* CSS Document */
+*{margin:0; padding:0;}
+body {background:#ccc;font-family:Arial, Helvetica, sans-serif;}
+.weekday{background:#aaa;width:505px;height:140px; border:1px solid #fff;margin:50px auto 0;padding:10px 10px 20px 20px;}
+
+.weekday ul{width:505px;overflow:hidden}
+.weekday li{float:left;list-style:none;width:60px;height:55px;background:#000;border:1px solid #fff;color:#fff;margin:10px 10px 0px 0px;text-align:center;padding-top:5px;}
+.weekday li h2{font-size:20px;}
+.weekday li p{font-size:14px;}
+.weekday .text{width:472px;background:#eee;border:1px solid #fff;padding:10px;margin-top:10px;}
+
+.weekday .text .h2{font-size:14px;margin-button:5px}
+.weekday .text p{font-size:12px;line-height:20px}
+.weekday .active{background:#fff;border:1px;color:#0099ff}

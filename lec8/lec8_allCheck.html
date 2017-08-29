@@ -1,0 +1,53 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script>
+window.onload=function()
+{
+var oInput=div1.getElementsByTagName('input');
+	//alert(oInput.length);
+	btn1.onclick=function()
+	{
+		for(var i=0;i<oInput.length;i++)
+		{ 
+		oInput[i].checked=true;
+		}
+	}
+	btn2.onclick=function()
+	{
+		for(var i=0;i<oInput.length;i++)
+		{ 
+		oInput[i].checked=false;
+		}
+	}
+	btn3.onclick=function()
+	{
+		for(var i=0;i<oInput.length;i++)
+		{ 
+		if(oInput[i].checked==true)
+		oInput[i].checked=false;
+		else 
+		oInput[i].checked=true;
+		}
+	}
+}
+</script>
+</head>
+
+<body>
+<input type="button" value="all" id="btn1"/>
+<input type="button" value="uncheckall" id="btn2"/>
+<input type="button" value="Anti-election" id="btn3"/>
+<div id='div1'>
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+<input type="checkbox" />
+</div>
+</body>
+</html>

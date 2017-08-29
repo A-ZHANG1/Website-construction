@@ -1,0 +1,61 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>Wanyue lec5</title>
+<style>
+#div1{width:50px; height:50px; background:#ff0;}
+</style>
+
+<script>
+/*function show(a,b)
+{
+alert(a+b);
+}
+show("1","2");*/
+/*function big()
+{
+div1.style.width="100px";
+div1.style.height="100px";
+}
+function small()
+{
+div1.style.width="5px";
+div1.style.height="5px";
+}*/
+/*function change(a,b){
+div1.style.width=a;
+div1.style.height=b;
+}*/
+function change(p,v)
+{
+//div1.style.p=v;
+
+div1.style[p]=v;
+
+//alert(p+"="+v);
+}
+
+</script>
+</head>
+
+<body>
+<input type="button" value="Width" onclick="change('width','100px')"/>
+<input type="button" value="Height" onclick="change('height','100px')"/>
+<input type="button" value="Color" onclick="change('background','green')"/>
+<input type="button" value="Border" onclick="change('border','10px solid #000')"/>
+<input type="button" value="Font" onclick="change('color','red')"/>
+
+<div id="div1">
+<p>
+This is a paragraph.
+</p>
+</div>
+<p>
+比如change函数接收的参数，是变量，不需要引号。
+<Br>而'width','height'等属性作为字符串，需要用引号表明其为字符串。
+</p>
+</body>
+</html>
+
+

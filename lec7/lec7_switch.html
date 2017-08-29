@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<!-- saved from url=(0014)about:internet -->
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script>
+//var a;
+//var b=new Boolean(false)
+////alert(a='1'>2)//字符串变为数字
+//alert(!!b)
+
+function a(){
+var name=txt1.value;
+var sex=txt2.value;
+
+switch(sex)
+{
+case '男':
+	alert(name+'先生，你好');
+	break;
+case '女':
+	alert(name+'女士，你好');
+	break;
+default:
+	alert("你好");
+}
+}
+</script>
+</head>
+
+<body>
+姓名：<input id="txt1" type="text" /> 
+性别：<input id="txt2" type="text" /> 
+
+<input type="button" id="btn1" value="submit"  onclick="a()" />
+</body>
+</html>
